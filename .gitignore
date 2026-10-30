@@ -1,0 +1,38 @@
+# Local machine-specific serial port configuration
+qrecall.conf
+
+# Runtime logs and datasets
+runs/
+*.jsonl
+*.log
+
+# Arduino build outputs
+**/build/
+**/.pio/
+*.bin
+*.elf
+*.hex
+*.map
+*.o
+*.d
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak

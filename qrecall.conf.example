@@ -1,0 +1,13 @@
+# Copy this file to qrecall.conf and set the stable paths for your boards.
+# Prefer /dev/serial/by-id/... over /dev/ttyUSB0 because tty numbers can change.
+#
+# Run: ./qrecall.sh ports
+# If /dev/serial/by-id is empty, use /dev/ttyUSB0 and /dev/ttyUSB1 for now,
+# but verify which physical board is connected to each port before flashing.
+
+TX_PORT="/dev/serial/by-id/REPLACE_WITH_TX_DEVICE_ID"
+RX_PORT="/dev/serial/by-id/REPLACE_WITH_RX_DEVICE_ID"
+
+# Optional overrides (normally leave these alone):
+# FQBN="esp32:esp32:esp32"
+# BAUD="115200"
